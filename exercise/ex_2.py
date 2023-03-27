@@ -35,3 +35,13 @@ pole_trapez = ((podst_1+podst_2)*h)/2
 tekst_trapez = "Obwód trapezu wynosi {}, a pole {}.".format(obwod_trapez, pole_trapez)
 print(tekst_trapez)
 # romb
+a_romb = 7
+h_romb = 10
+pole_romb = a_romb * h_romb
+obwod_romb = 4 * a_romb
+tekst_romb = "Obwód rombu wynosi {}, a pole {}.".format(obwod_romb, pole_romb)
+print(tekst_romb)
+
+
+
+
