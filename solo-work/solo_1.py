@@ -10,7 +10,6 @@ print("{} {}".format(hello, student))
 # zadanie 1.2
 
 student = input("Wpisz swoje imie")
-print("Hello Ola")
 print("{} {}".format(hello, student))
 
 # zadanie 1.3
@@ -19,9 +18,6 @@ studenci = ["Ania", "Kuba", "Piotr", "Jan"]
 
 # policz liczbe studentow w tablicy studenci
 # oczekiwany rezultat: Liczba studentow wynosi: 4
-liczba_studentow = 0
-print("Liczba studentow wynosi: 0")
-
 liczba_studentow = len(studenci)
 print("Liczba studentów wynosi: {}".format(liczba_studentow))
 
@@ -36,8 +32,6 @@ studenci = ["Ania", "Kasia", "Piotr", "Tomek"]
 # Hello Kasia
 # Hello Piotr
 # Hello Tomek
-print("Hello Ania")
-
 for student in studenci:
     print("Hello {}".format(student))
 
@@ -46,13 +40,9 @@ for student in studenci:
 liczba = 3
 potega = 4
 
-wynik = 0
-
 # oczekiwany rezultat:
 # Wynik wynosi: 81
-print("Wynik wynosi: 0")
-
-wynik = pow(3,4)
+wynik = pow(3, 4)
 print("Wynik wynosi: {}".format(wynik))
 
 # zadanie 1.6
@@ -60,12 +50,9 @@ print("Wynik wynosi: {}".format(wynik))
 # policz ilosc nawiasow ( w danym ciagu znakow
 
 ciag_znakow = "edbw(hdakqas(skqskahb))adwndwb(wgwidn()dsqwhjdw)"
-liczba_nawiasow_otwierajacych = 0
 
 # oczekiwany rezultat:
 # Liczba nawiasow otwierajacych wynosi: 4
-print("Liczba nawiasow otwierajacych wynosi: " + str(liczba_nawiasow_otwierajacych))
-
 liczba_nawiasow_otwierajacych = ciag_znakow.count('(')
 print("Liczba nawiasow otwierajacych wynosi: " + str(liczba_nawiasow_otwierajacych))
 
@@ -79,10 +66,6 @@ studenci = ["Anna Szczesny", "Tomasz Nijaki", "Barbara Kowalska", "Jan Niezbedny
 # Barbara Kowalska
 # Jan Niezbedny
 # Tomasz Nijaki
-print("Alfabetyczna lista studentow wynosi: ")
-for student in studenci:
-    print(student)
-
 posortowani_studenci = sorted(studenci)
 print("Alfabetyczna lista studentow wynosi: ")
 for student in posortowani_studenci:
@@ -98,10 +81,6 @@ studenci = ["Anna Szczesny", "Tomasz Nijaki", "Barbara Kowalska", "Jan Niezbedny
 # Jan Niezbedny
 # Tomasz Nijaki
 # Anna Szczesny
-print("Alfabetyczna lista studentow wynosi: ")
-for student in studenci:
-    print(student)
-
 studenci.sort(key=lambda s: s.split()[1])
 
 print("Alfabetyczna lista studentow wynosi: ")
@@ -114,7 +93,6 @@ for student in studenci:
 studenci = ["Anna Szczesny", "Tomasz Nijaki", "Barbara Kowalska", "Jan Niezbedny"]
 
 liczba_n = 0
-print("Liczba studentow na N wynosi: 0")
 
 for student in studenci:
     nazwisko = student.split()[1]
@@ -122,7 +100,6 @@ for student in studenci:
         liczba_n += 1
 
 print("Liczba studentow na N wynosi: {}".format(liczba_n))
-
 
 # zadanie 1.10
 
@@ -146,7 +123,6 @@ a_1 = (wykres_1[1][1] - wykres_1[0][1]) / (wykres_1[1][0] - wykres_1[0][0])
 b_1 = wykres_1[1][1] - (a_1 * wykres_1[1][0])
 
 y_1 = wykres_1[2][0] * a_1 + b_1
-print(y_1)
 if y_1 == wykres_1[2][1]:
     wykres_1_funkcja_liniowa = True
 
