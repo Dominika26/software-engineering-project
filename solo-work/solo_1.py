@@ -40,3 +40,17 @@ print("Hello Ania")
 
 for student in studenci:
     print("Hello {}".format(student))
+
+# zadanie 1.5
+
+liczba = 3
+potega = 4
+
+wynik = 0
+
+# oczekiwany rezultat:
+# Wynik wynosi: 81
+print("Wynik wynosi: 0")
+
+wynik = pow(3,4)
+print("Wynik wynosi: {}".format(wynik))
