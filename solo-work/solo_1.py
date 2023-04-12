@@ -107,3 +107,18 @@ studenci.sort(key=lambda s: s.split()[1])
 print("Alfabetyczna lista studentow wynosi: ")
 for student in studenci:
     print(student)
+
+# zadanie 1.9
+
+# policz wszystkich studentow z tablicy, ktorych nazwisko zaczyna sie na N
+studenci = ["Anna Szczesny", "Tomasz Nijaki", "Barbara Kowalska", "Jan Niezbedny"]
+
+liczba_n = 0
+print("Liczba studentow na N wynosi: 0")
+
+for student in studenci:
+    nazwisko = student.split()[1]
+    if nazwisko[0] == 'N':
+        liczba_n += 1
+
+print("Liczba studentow na N wynosi: {}".format(liczba_n))
