@@ -68,3 +68,22 @@ print("Liczba nawiasow otwierajacych wynosi: " + str(liczba_nawiasow_otwierajacy
 
 liczba_nawiasow_otwierajacych = ciag_znakow.count('(')
 print("Liczba nawiasow otwierajacych wynosi: " + str(liczba_nawiasow_otwierajacych))
+
+# zadanie 1.7
+
+# posortuj alfabetycznie (od imienia) studentow
+studenci = ["Anna Szczesny", "Tomasz Nijaki", "Barbara Kowalska", "Jan Niezbedny"]
+
+# oczekiwany rezultat:
+# Anna Szczesny
+# Barbara Kowalska
+# Jan Niezbedny
+# Tomasz Nijaki
+print("Alfabetyczna lista studentow wynosi: ")
+for student in studenci:
+    print(student)
+
+posortowani_studenci = sorted(studenci)
+print("Alfabetyczna lista studentow wynosi: ")
+for student in posortowani_studenci:
+    print(student)
