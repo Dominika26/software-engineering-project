@@ -64,4 +64,4 @@ file.close()
 for i, pracownik in enumerate(pracownicy):
     pracownicy[i][2] = int(pracownik[2])
 
-print(round(oblicz_koszt_pracownikow(pracownicy), 2))
+print(f"Całkowity koszt wszystkich pracowników wynosi: {round(oblicz_koszt_pracownikow(pracownicy), 2)}")
