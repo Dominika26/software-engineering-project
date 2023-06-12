@@ -1,3 +1,6 @@
+import csv
+
+
 class Pracownik():
     def __init__(self, imie, nazwisko, wynagrodzenie_brutto):
         self.imie = imie
@@ -44,3 +47,21 @@ class Pracownik():
 
         return self.calkowity_koszt
 
+
+def oblicz_koszt_pracownikow(list):
+    koszt_calkowity_pracownikow = 0
+    for element in pracownicy:
+        pracownik = Pracownik(element[0], element[1], element[2])
+        koszt_calkowity_pracownikow = koszt_calkowity_pracownikow + pracownik.oblicz_calkowity_koszt()
+
+    return koszt_calkowity_pracownikow
+
+
+file = open("pracownicy.csv", "r")
+pracownicy = list(csv.reader(file, delimiter=","))[1:]
+file.close()
+
+for i, pracownik in enumerate(pracownicy):
+    pracownicy[i][2] = int(pracownik[2])
+
+print(round(oblicz_koszt_pracownikow(pracownicy), 2))
